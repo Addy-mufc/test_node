@@ -11,7 +11,7 @@
         "id": "2b173a1fa7c0d424",
         "type": "inject",
         "z": "ee72a82d6e88dfd2",
-        "name": "",
+        "name": "onDemand",
         "props": [
             {
                 "p": "payload"
