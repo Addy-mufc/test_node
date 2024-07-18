@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ee72a82d6e88dfd2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2b173a1fa7c0d424",
+        "type": "inject",
+        "z": "ee72a82d6e88dfd2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "761b2b346d4fbeb4"
+            ]
+        ]
+    },
+    {
+        "id": "7dec926db56c5adb",
+        "type": "debug",
+        "z": "ee72a82d6e88dfd2",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "761b2b346d4fbeb4",
+        "type": "http request",
+        "z": "ee72a82d6e88dfd2",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=38.99&lon=-76.94&appid=0c83f1718794837c24a03ae40c8e8967",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "7dec926db56c5adb"
+            ]
+        ]
+    }
+]
