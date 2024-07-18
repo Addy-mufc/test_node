@@ -40,7 +40,7 @@
         "id": "7dec926db56c5adb",
         "type": "debug",
         "z": "ee72a82d6e88dfd2",
-        "name": "debug 1",
+        "name": "print output",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -49,7 +49,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
+        "x": 690,
         "y": 260,
         "wires": []
     },
